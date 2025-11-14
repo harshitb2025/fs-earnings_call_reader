@@ -29,7 +29,7 @@ MARKDOWN_DIR = Path(os.getcwd()) / "markdown"
 EXCEL_DIR = Path(os.getcwd()) / "excel_sheets"
 MARKDOWN_DIR.mkdir(exist_ok=True)
 
-default_excel = Path(__file__).resolve().parent.parent / "default_themes_def.xlsx"
+default_excel = "default_themes_def.xlsx"
 initial_df = pd.read_excel(default_excel)
 
 # ==============================
