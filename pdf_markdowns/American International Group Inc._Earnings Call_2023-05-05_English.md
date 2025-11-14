@@ -6,9 +6,7 @@
 
 # **American International Group, Inc. NYSE:AIG FQ1 2023 Earnings Call Transcripts**
 
-## **Friday, May 5, 2023 12:30 PM GMT**
-
-## **S&P Global Market Intelligence Estimates**
+**Friday, May 5, 2023 12:30 PM GMT** S&P Global Market Intelligence Estimates
 
 |   | -FQ1 2023- |  | -FQ2 2023- | -FY 2023- | -FY 2024-  |
 | --- | --- | --- | --- | --- | --- |
@@ -16,57 +14,9 @@
 |  EPS Normalized | 1.42 | 1.63 | 14.79 | 1.64 | 6.52  |
 |  Revenue (mm) | 11643.77 | NA | NA | 11928.55 | 49106.00  |
 
-**Currency: USD**
+Currency: USD Consensus as of May-05-2023 4:55 AM GMT
 
-**Consensus as of May-05-2023 4:55 AM GMT**
-
-
-IMAGE 1 begins...
-Stock Price [USD] vs. Volume [mm] with earnings surprise annotations
-
-Positive EPS Normalized surprise
-Negative EPS Normalized surprise
-Neutral EPS Normalized surprise
-
-Share Price
-
-Volume
-
-Jul 2022
-Sep 2022
-Nov 2022
-Jan 2023
-Mar 2023
-May 2023
-
-FQ2 2022
-FQ3 2022
-FQ4 2022
-FQ1 2023
-
-- EPS NORMALIZED -
-
-CONSENSUS
-ACTUAL
-SURPRISE
-
-1.14
-1.19
-4.39%
-
-0.52
-0.66
-26.92%
-
-1.28
-1.36
-6.25%
-
-1.42
-1.63
-14.79%
-IMAGE 1 ends...
-
+![img-0.jpeg](img-0.jpeg)
 <end_of_page_1>
 
 <start_of_page_2>
@@ -190,7 +140,7 @@ Turning to International Commercial. Net premiums written grew 6\%, primarily du
 
 International Commercial new business was over $\$ 590$ million, led by Specialty, which increased its new business by over 50\%, driven by Energy and Marine. North America Commercial, excluding Validus Re, achieved new business of over $\$ 480$ million, driven by Lexington, which saw excellent new business growth of over 50\%. With respect to rate in North America Commercial, excluding Validus Re, rates increased $7 \%$ in the first quarter or $8 \%$ if you exclude workers' compensation, and the exposure increase was $2 \%$.
 
-In North America Commercial, rate was driven by Lexington wholesale, which was up 26\% with Wholesale Property up 35\%. For Lexington Property Wholesale, this was its strongest quarterly rate increase. Rate in Retail Property was also up significantly at 32\%; International Commercial rate increases were 8\%, driven by Talbot at 16\%, International Property at 11\% and Specialty at 9\%. The exposure increase in the International portfolio was $2 \%$. Rate plus exposure remains above loss cost trend at $9 \%$ in North America, $10 \%$ if you exclude workers' compensation and $10 \%$ in International.
+In North America Commercial, rate was driven by Lexington wholesale, which was up 26\% with Wholesale Property up 35\%. For Lexington Property Wholesale, this was its strongest quarterly rate increase. Rate in Retail Property was also up significantly at 32\%; International Commercial rate increases were $8 \%$, driven by Talbot at $16 \%$, International Property at $11 \%$ and Specialty at $9 \%$. The exposure increase in the International portfolio was $2 \%$. Rate plus exposure remains above loss cost trend at $9 \%$ in North America, $10 \%$ if you exclude workers' compensation and $10 \%$ in International.
 
 Turning to Personal Insurance. First quarter results reflect our continued repositioning of this business, especially PCG, given our announcement of the creation of a managing general agency in partnership with Stone Point Capital. I will provide more information on the MGA later in my remarks.
 
@@ -258,25 +208,25 @@ Second, we adopted the change in accounting standard for certain long-duration p
 <start_of_page_9>
 with our previous guidance. As a reminder, this is a GAAP accounting change only and does not impact statutory results, insurance company cash flows or economic returns. Going forward, we expect a modest run rate increase in L\&R APTI and less market and mortality-driven volatility from the change in accounting standards.
 
-Turning to the quarter, as Peter mentioned, AIG's first quarter adjusted after-tax income was $\$ 1.2$ billion or $\$ 1.63$ per diluted share, up $9 \%$ from last year on a restated basis and up $25 \%$ from originally reported. Key trends in the quarter and similar to the last 3 quarters were higher GI underwriting results and higher income from fixed maturities and loans and lower alternative investment income. Compared to the prior year quarter, there was a higher impact from noncontrolling interest from the Corebridge IPO in 3Q'22.
+Turning to the quarter, as Peter mentioned, AIG's first quarter adjusted after-tax income was $\$ 1.2$ billion or $\$ 1.63$ per diluted share, up $9 \%$ from last year on a restated basis and up $25 \%$ from originally reported. Key trends in the quarter and similar to the last 3 quarters were higher GI underwriting results and higher income from fixed maturities and loans and lower alternative investment income. Compared to the prior year quarter, there was a higher impact from noncontrolling interest from the Corebridge IPO in 3Q '22.
 
 Consolidated net investment income on an APTI basis was $\$ 3.1$ billion. Similar to the fourth quarter, income from fixed maturities and loans in both GI and L\&R rose sequentially and over the prior year, while returns on alternative investments were down \$593 million compared to very strong annualized returns of $28 \%$ last year.
 
-Income on fixed maturities and loans rose by $\$ 573$ million over the prior year, with average new money reinvestment rates of $5.35 \%$, about 220 basis points above sales and maturities. The yield rose to $4.29 \%$, up 78 basis points from 1Q'22 and 23 basis points over 4Q'22. Part of the increase in fixed maturity yields resulted from our proactive repositioning over the last 2 quarters in the U.S. GI portfolio. We sold and reinvested about $\$ 6$ billion in fixed maturities, resulting in a realized loss of $\$ 224$ million, but added 9 basis points of GI yield improvement for the quarter. We expect incremental yield pickup from this repositioning in 2Q'23 and also from higher reinvestment rates throughout 2023 based on the current rate and spread environment.
+Income on fixed maturities and loans rose by $\$ 573$ million over the prior year, with average new money reinvestment rates of $5.35 \%$, about 220 basis points above sales and maturities. The yield rose to $4.29 \%$, up 78 basis points from 1Q ' 22 and 23 basis points over 4Q '22. Part of the increase in fixed maturity yields resulted from our proactive repositioning over the last 2 quarters in the U.S. GI portfolio. We sold and reinvested about $\$ 6$ billion in fixed maturities, resulting in a realized loss of $\$ 224$ million, but added 9 basis points of GI yield improvement for the quarter. We expect incremental yield pickup from this repositioning in 2Q '23 and also from higher reinvestment rates throughout 2023 based on the current rate and spread environment.
 
-Turning to the segments. GI adjusted pretax income, or APTI, was $\$ 1.2$ billion, $\$ 37$ million higher than 1Q'22, principally due to a $\$ 56$ million increase in underwriting income from both higher-earned premiums and a 1 point improvement in the calendar year combined ratio, which was $91.9 \%$. Peter covered underwriting results in detail, but I want to add that GI reserves had favorable prior year development, net of reinsurance at prior year premiums of $\$ 54$ million.
+Turning to the segments. GI adjusted pretax income, or APTI, was $\$ 1.2$ billion, $\$ 37$ million higher than 1Q ' 22 , principally due to a $\$ 56$ million increase in underwriting income from both higher-earned premiums and a 1 point improvement in the calendar year combined ratio, which was $91.9 \%$. Peter covered underwriting results in detail, but I want to add that GI reserves had favorable prior year development, net of reinsurance at prior year premiums of $\$ 54$ million.
 
-Turning to L\&R results for the first quarter. APTI was $\$ 886$ million, down $\$ 48$ million compared to $\$ 934$ million in 1Q'22 as restated. Consistent with GI, L\&R had a strong increase in base portfolio investment income, but lower alternative investment income. Mortality experience improved, but fee income was down due to lower capital market levels compared to a year ago. As Peter noted, L\&R premiums and deposits were very strong at $\$ 10.4$ billion. Notably, Individual Retirement sales were $\$ 4.9$ billion, a $26 \%$ increase over the prior year quarter with record levels of fixed and fixed index annuity sales because of higher crediting rates.
+Turning to L\&R results for the first quarter. APTI was $\$ 886$ million, down $\$ 48$ million compared to $\$ 934$ million in 1Q ' 22 as restated. Consistent with GI, L\&R had a strong increase in base portfolio investment income, but lower alternative investment income. Mortality experience improved, but fee income was down due to lower capital market levels compared to a year ago. As Peter noted, L\&R premiums and deposits were very strong at $\$ 10.4$ billion. Notably, Individual Retirement sales were $\$ 4.9$ billion, a $26 \%$ increase over the prior year quarter with record levels of fixed and fixed index annuity sales because of higher crediting rates.
 
 Group Retirement deposits grew 19\%, with higher out-of-plan fixed annuity sales and new plan acquisitions. Strong fixed and fixed index annuity sales, net of surrenders, resulted in $\$ 1.3$ billion of positive flows to the General Account in Individual Retirement, up from $\$ 0.7$ billion last year. While surrenders are up, they remain below projections. Variable annuity net flows, which impact the separate account, were negative.
 
-To conclude on earnings for the quarter, other operations adjusted pretax loss, or APTL, was $\$ 491$ million, a $\$ 70$ million increase due to lower APTI from consolidated investment entities in Asset Management, which had strong private equity results in 1Q'22. Corporate GOE decreased $\$ 27$ million from the prior year and $\$ 77$ million from 4Q'22 despite $\$ 29$ million of additional expense related to the corporate separation.
+To conclude on earnings for the quarter, other operations adjusted pretax loss, or APTL, was $\$ 491$ million, a $\$ 70$ million increase due to lower APTI from consolidated investment entities in Asset Management, which had strong private equity results in 1Q '22. Corporate GOE decreased $\$ 27$ million from the prior year and $\$ 77$ million from 4Q ' 22 despite $\$ 29$ million of additional expense related to the corporate separation.
 
 Turning to AIG's balance sheet. Book value per common share was $\$ 58.87$ at quarter end, up $7 \%$ from year-end, principally due to higher valuations on available-for-sale securities due to lower long-term interest rates. Adjusted book value was $\$ 75.87$ per share, roughly flat with year-end. At the end of March, we issued $\$ 750$ million of senior notes, a portion of which was used to pay down an April bond maturity.
 
 Our leverage ratio declined to $32.8 \%$, down about 1 point from year-end even with the new issuance due to the change in AOCI in the quarter. Excluding AOCI and the Fortitude-embedded derivative, debt leverage was $26.3 \%$.
 
-For the first quarter of 2023, AIG's consolidated adjusted ROCE was $8.7 \%$, comprised of $11.6 \%$ in GI and $10.7 \%$ in L\&R. As Peter discussed, we are laser-focused on achieving a 10\%-plus ROCE post deconsolidation.
+For the first quarter of 2023, AIG's consolidated adjusted ROCE was $8.7 \%$, comprised of $11.6 \%$ in GI and $10.7 \%$ in L\&R. As Peter discussed, we are laser-focused on achieving a $10 \%$-plus ROCE post deconsolidation.
 
 Peter provided a lot of detail on the quarter. So I'll use my remaining time to cover investments, particularly Commercial Mortgage Loans, given the recent focus on this asset class. First, I want to emphasize that our investment portfolio is grounded in the liability profile of our 2 insurance businesses. We strive to achieve strong risk-adjusted returns while matching the duration, cash flow and liquidity needs of the liabilities.
 
@@ -296,7 +246,7 @@ Roughly $3 / 4$ of the building securing the loans are Class A or newer building
 
 Today, we are intensely focused on office loan maturities in the next 2 years, about $\$ 2$ billion or 28 loans. We are already in discussions with many borrowers about their plans and our requirements for refinancing or extension, including additional equity revised terms or other commitments. While valuations are under pressure, cash flows are the primary source of debt service for our loans, and we will continue to monitor the loans carefully. We look forward to updating you on our investment performance in the quarters ahead.
 
-To wrap up, our first quarter 2023 results demonstrate continued sustained and strong financial results, rising investment portfolio yields, significant progress against strategic initiatives, robust capital and liquidity and continued progress on our path to a 10\%-plus ROCE.
+To wrap up, our first quarter 2023 results demonstrate continued sustained and strong financial results, rising investment portfolio yields, significant progress against strategic initiatives, robust capital and liquidity and continued progress on our path to a $10 \%$-plus ROCE.
 With that, I will turn the call back over to Peter.
 <end_of_page_10>
 

@@ -16,49 +16,7 @@ S&P Global Market Intelligence Estimates
 
 Currency: USD Consensus as of May-04-2023 7:45 PM GMT
 
-
-IMAGE 1 begins...
-Sure, here is the extracted text from the image:
-
-**Top Section:**
-
-- Stock Price [USD] vs. Volume [mm] with earnings surprise annotations
-- Share Price
-- Volume
-- Positive EPS Normalized surprise
-- Negative EPS Normalized surprise
-- Neutral EPS Normalized surprise
-- Jul 2022
-- Sep 2022
-- Nov 2022
-- Jan 2023
-- Mar 2023
-- May 2023
-- 80
-- 75
-- 70
-- 65
-- 60
-- 55
-- 50
-- 15.0mm
-- 12.5mm
-- 10.0mm
-- 7.5mm
-- 5.0mm
-- 2.5mm
-- 0.0mm
-
-**Bottom Section (- EPS NORMALIZED -):**
-
-|                   | CONSENSUS | ACTUAL | SURPRISE                    |
-|-------------------|-----------|--------|-----------------------------|
-| FQ2 2022          | 1.48      | 2.00   | 🔺35.14%                   |
-| FQ3 2022          | 1.17      | 1.21   | 🔺3.42%                     |
-| FQ4 2022          | 1.64      | 1.55   | 🔻(5.49%)                   |
-| FQ1 2023          | 1.86      | 1.02   | 🔻(45.28%)                  |
-IMAGE 1 ends...
-
+![img-0.jpeg](img-0.jpeg)
 <end_of_page_1>
 
 <start_of_page_2>

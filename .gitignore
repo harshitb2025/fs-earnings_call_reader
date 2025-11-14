@@ -9,7 +9,6 @@ src/.ipynb_checkpoints/*
 .env
 .fsecr/*
 results/*
-*.xlsx
 *.pdf
 *.md
 *.ipynb

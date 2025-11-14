@@ -16,33 +16,7 @@ S&P Global Market Intelligence Estimates
 
 Currency: USD Consensus as of May-04-2023 2:00 PM GMT
 
-
-IMAGE 1 begins...
-Sure, here is the text extracted from the image:
-
----
-
-Stock Price [USD] vs. Volume [mm] with earnings surprise annotations
-
-Share Price  
-▲ Positive EPS Normalized surprise  
-▼ Negative EPS Normalized surprise  
-● Neutral EPS Normalized surprise
-
-Volume
-
-- EPS NORMALIZED -
-
-|                  | CONSENSUS | ACTUAL | SURPRISE               |
-|--------------|--------------|--------|-------------------------|
-| FQ2 2022 | 2.33                   | 1.74   | ▼ (25.32%)             |
-| FQ3 2022 | 2.02                   | 2.13   | ▲ 5.45%                    |
-| FQ4 2022 | 2.51                   | 2.42   | ▼ (3.59%)               |
-| FQ1 2023 | 2.93                   | 2.66   | ▼ (9.22%)               |
-
----
-IMAGE 1 ends...
-
+![img-0.jpeg](img-0.jpeg)
 <end_of_page_1>
 
 <start_of_page_2>
@@ -244,9 +218,8 @@ Turning to Slide 14. And in summary, we are transforming our businesses for sust
 
 [Operator Instructions] Our first question today is coming from Tom Gallagher from Evercore ISI.
 
-## Thomas George Gallagher
+## Thomas George Gallagher <br> Evercore ISI Institutional Equities, Research Division
 
-Evercore ISI Institutional Equities, Research Division
 First question is just on the potential for the rules being changed on the interest maintenance reserve. Can you -- I know that I think that was around the $\$ 1.8$ billion negative adjustment for you guys last year based on the mark-to-market impacts from interest rates from derivatives. Curious if -- I think there's a proposal within the NAIC out there that suggests there will be some changes. Can you talk about whether you think that will go through and whether or not at least some portion, if not all, of the $\$ 1.8$ billion could be recaptured if it has changed?
 
 ## Kenneth Yutaka Tanji <br> Executive VP \& CFO
@@ -255,18 +228,16 @@ Tom, it's Ken. Yes, the NAIC is in the process of addressing what is uneconomic 
 
 Having said that, the proposal needs some changes in a few areas but there is a process to sort that out. We and many others are engaged in very constructive discussions. It's hard to predict the regulatory process, but it seems it's on the path for changes this year.
 
-## Thomas George Gallagher
+## Thomas George Gallagher <br> Evercore ISI Institutional Equities, Research Division
 
-Evercore ISI Institutional Equities, Research Division
 And Ken, would you -- is kind of your base case assumption based on what's out there now that you'll potentially get all of it back? Or would it be just a part, maybe a partial clawing back of some of that negative impact on RBC.
 
 ## Kenneth Yutaka Tanji <br> Executive VP \& CFO
 
 Yes, Tom, again, it's hard to predict. There are things that are being discussed and until that those things get sorted out, I wouldn't want to give an indication of how that plays out. But again, they are taking input, it's a very constructive process, I think all the intentions are there to put this on the path for resolution, but that will play out in time.
 
-## Thomas George Gallagher
+## Thomas George Gallagher <br> Evercore ISI Institutional Equities, Research Division
 
-Evercore ISI Institutional Equities, Research Division
 And then just for my follow-up, I just -- a question on leverage. I think you've announced you're going to redeem $\$ 1.5$ billion of sub debt in June. And I think you issued $\$ 500$ million this quarter as well -- or sorry, in Q1. The -- where do you stand now on leverage? Can you just talk about -- do you have upward capacity to issue more debt? Are you at about the right level? Because I think there's been some changes in -- certainly, from an accounting perspective, it's a bit of an elusive calculation to do from our perspective. But can you provide some help there?
 
 ## Kenneth Yutaka Tanji <br> Executive VP \& CFO
