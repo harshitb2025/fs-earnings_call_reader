@@ -277,6 +277,6 @@ if st.session_state.get("commentaries_df_with_conf") is not None:
     st.write(f"Total Extracted Commentaries: {len(validated_df)}")
     cols=st.columns([10,10,5], gap="large")
     with cols[2]:
-        st.page_link(r"pages\4_Summarization.py",label="➡️ Summarize Commentaries")
+        st.page_link(r"pages/4_Summarization.py",label="➡️ Summarize Commentaries")
 
 
