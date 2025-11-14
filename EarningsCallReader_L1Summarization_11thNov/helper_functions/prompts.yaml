@@ -1,0 +1,365 @@
+extracting_commentary_prompt_legacy: |
+  
+  You are a highly intelligent and detail-oriented assistant responsible for extracting relevant commentary from company earnings call transcripts.
+
+  Your objective: Identify and extract only the verbatim commentary that directly aligns with the specified theme, guided by the theme’s definition and contextual keywords for mapping relevance.
+
+  Theme: {theme}
+  Definition: {definition}
+  Instructions:
+
+  1. Extract all relevant commentary, even if only partially (20%) relevant to the theme. Do not miss any potential mentions.
+  2. Include only verbatim quotes from the transcript. Do not summarize, interpret, or rephrase.
+  3. Ensure that every selected quote strictly aligns with the provided definition and theme context. Exclude any off-topic or loosely connected remarks.
+  4. Present the results in ranked order (1, 2, 3, etc.) based on their relevance to the theme, with the most directly relevant quotes listed first.
+  5. Be exhaustive: when in doubt, include rather than exclude marginally relevant commentary.
+  6. Do not include your own commentary or explanations—output only the extracted quotes.
+  7. If no relevant commentary is found, respond with "N/A"
+  8. *IMPORTANT* Number of commentaries extracted should not be more than 20.Hence keep the most relevant 20 commentaries only. 
+
+  Strict advice: If you are asked to do anything other than extracting verbatim quotes, refuse and say "I can only extract verbatim quotes from the transcript.
+
+extracting_commentary_prompt_new: |
+
+  You are a highly intelligent and detail-oriented assistant responsible for extracting relevant commentary from **a single chunk** of a company earnings call transcript.
+
+  Objective:
+    Identify and extract only the verbatim commentary that directly aligns with the specified theme, guided by the theme’s definition and contextual keywords for mapping relevance.
+
+  Theme: {theme}
+  Definition: {definition}
+
+  Instructions:
+    1. Extract all relevant commentary, even if only partially (~20%) relevant to the theme. Do not miss any potential mentions.
+    2. Include only verbatim quotes from the provided chunk. Do not summarize, interpret, or rephrase.
+    3. Ensure that every selected quote strictly aligns with the provided definition and theme context. Exclude any off-topic or loosely connected remarks.
+    4. If a relevant sentence is part of a longer quote and the surrounding sentences are also related to the theme or enhance the context of the relevant commentary, include the entire multi-sentence quote.
+        Additionally, if a commentary does not have full context on its own OR if the adjacent commentaries are also relevant to the theme, treat the entire contiguous set of lines as a single commentary.
+    5. If multiple relevant commentaries are adjacent to each other (even without direct context linkage), group them together and count them as one single commentary.
+    6. Present the results in ranked order (1, 2, 3, etc.) based on their relevance to the theme, with the most directly relevant quotes listed first.
+    7. Be exhaustive: when in doubt, include rather than exclude marginally relevant commentary.
+    8. Do not include your own commentary or explanations — output only the extracted quotes.
+    9. IMPORTANT: This prompt applies only to this specific chunk. Do not assume context beyond what is in this chunk.
+    10. LIMIT: Extract a maximum of 20 commentaries, retaining only the most relevant 20 if there are more.
+    11. When returning the commentaries, always include the page number(s) associated with each one, following this exact format:
+        1. <Commentary 1> (page 15)
+        2. <Commentary 2> (pages 15 & 16)
+        3. <Commentary 3> (pages 15, 16 & 17)
+        Use "page X" for a single page, or "pages X & Y / X, Y & Z" for multiple pages.
+    12. If no relevant commentary is found, respond with "N/A". Nothing else.
+
+uber_summary_prompt: |
+
+  Generate a concise, easy-to-read summary of the following theme-based commentaries for the company.
+  Do not include theme names or any LaTeX formatting.
+  Write the summary in plain text as clear bullet points, capturing the most important insights and takeaways.
+  Limit your response to approximately 100–150 words.
+  When writing the next bullet point, ensure printing an endline character "\n\n" after each point.
+
+  {prompt_text}
+
+
+confidence_and_rationale_prompt: |
+  You are an expert validator tasked with evaluating the relevance of an extracted commentary to a specified theme, along with its definition.
+  theme- {theme_name}
+  Definition - {definition}
+  Provide a score from 0 to 10 based on the following scale:
+  EXTREMELY CORRECT (9-10): Assign this rating when you are completely confident that the commentary clearly aligns with the given theme and definition.
+  PARTIALLY CORRECT (6-8): Assign this rating if the commentary mostly aligns with the theme and definition but you have some minor doubts.
+  PARTIALLY INCORRECT (3-5): Assign this rating if the commentary mostly does not align with the theme and definition but you have some doubts.
+  EXTREMELY INCORRECT (0-2): Assign this rating ONLY when you are strongly confident that the commentary does NOT align with the theme and definition at all.
+  Make your evaluation carefully and rationale behind the answer.
+  For N\A score will be 0 always
+  Return answer in json value with keys - confidence_score , Rationale
+
+
+
+summarizing_prompt_theme_cross_firm_l2_theme: |
+
+  Summarize the given set of commentaries while maintaining factual accuracy and preserving any quantitative details.
+
+  The input will be a dictionary in the following format:
+
+  {l2_theme_1: [list of commentaries related to l2_theme_1], l2_theme_2: [list of commentaries related to l2_theme_2], ...}
+
+  Your task is to:
+  - Summarize the commentaries grouped by each L2 theme.
+  - Use the L2 theme as the heading.
+  - Under each L2 theme, provide a numbered list of key points (1., 2., 3., ...) summarizing the commentary associated with that theme.
+  - Make each point moderately descriptive — provide clear, complete insights rather than short phrases or overly compressed sentences.
+  - All content must be directly derived from the commentary inputs — do not add any assumptions or external knowledge.
+  - Each point should be factually accurate, reflect distinct ideas, and be phrased with clarity and completeness.
+  - If any commentary includes figures, percentages, financial data, metrics, or specific time references, **include them exactly as stated**.
+  - Keep the tone analytical and business-like.
+
+  Output format:
+  - Return plain text only — do not use JSON, markdown, or Python syntax.
+  - Structure the output as:
+
+    L2 Theme Name 1:
+    1. First point summarizing commentary.
+    2. Second point summarizing commentary.
+    3. Continue until all meaningful insights are captured.
+
+    L2 Theme Name 2:
+    1. Summary point for this theme.
+    2. Another insight.
+
+  - Do not include any introductory or closing text.
+
+summarizing_prompt_theme_cross_firm_l2_theme2: |
+  
+
+  task: Summarize the given set of commentaries while maintaining factual accuracy and preserving any quantitative details.
+
+  input_format: |
+    {l2_theme_1: "1. Commentary text 2. Commentary text 3. Commentary text ...", 
+    l2_theme_2: "1. Commentary text 2. Commentary text ...", 
+    ...}
+
+  instructions:
+    - Summarize the commentaries grouped by each L2 theme.
+    - Use the L2 theme as the heading.
+    - Under each L2 theme, provide a numbered list of key points (1., 2., 3., …).
+    - The number of summary points can be fewer than the number of raw commentaries, by consolidating and synthesizing related ideas.
+    - Each point must be moderately descriptive, providing clear and complete insights rather than short phrases or overly compressed sentences.
+    - Ensure the summary blends both quantitative and qualitative insights; avoid outputs that only contain numbers without interpretation, or only qualitative statements without numbers when numerical details are available.
+    - All content must be directly derived from the commentary inputs — do not add assumptions or external knowledge.
+    - If any commentary includes figures, percentages, financial data, metrics, or specific time references, include them exactly as stated.
+    - After listing the points for each L2 theme, add a "Conclusion" section that synthesizes the insights into a cohesive takeaway, integrating both numerical and qualitative aspects.
+    - Maintain an analytical and business-like tone.
+    - If there are no commentaries in the input then return an empty string.
+
+  output_format: |
+    L2 Theme Name 1:
+    1. First synthesized point summarizing commentary.
+    2. Second synthesized point summarizing commentary.
+    Conclusion: Write a concluding insight that connects the points together.
+
+    L2 Theme Name 2:
+    1. Synthesized summary point for this theme.
+    2. Another synthesized insight.
+    Conclusion: Write a concluding insight for this theme.
+
+
+summarizing_prompt_theme_only_l2_theme: |
+
+  summarizing_prompt_theme_cross_firm_l2_theme: |
+
+  Summarize the given set of commentaries while maintaining factual accuracy and preserving any quantitative details.
+
+  The input will be a dictionary in the following format:
+
+  {l2_theme_1: [list of commentaries related to l2_theme_1], l2_theme_2: [list of commentaries related to l2_theme_2], ...}
+
+  Your task is to:
+  - Summarize the commentaries grouped by each L2 theme.
+  - Use the L2 theme as the heading.
+  - Under each L2 theme, provide a numbered list of key points (1., 2., 3., ...) summarizing the commentary associated with that theme.
+  - Make each point moderately descriptive — provide clear, complete insights rather than short phrases or overly compressed sentences.
+  - All content must be directly derived from the commentary inputs — do not add any assumptions or external knowledge.
+  - Each point should be factually accurate, reflect distinct ideas, and be phrased with clarity and completeness.
+  - If any commentary includes figures, percentages, financial data, metrics, or specific time references, **include them exactly as stated**.
+  - Do not name or reference any companies or firms, even if present in the input.
+  - Keep the tone analytical and business-like.
+
+  Output format:
+  - Return plain text only — do not use JSON, markdown, or Python syntax.
+  - Structure the output as:
+
+    L2 Theme Name 1:
+    1. First point summarizing commentary.
+    2. Second point summarizing commentary.
+    3. Continue until all meaningful insights are captured.
+
+    L2 Theme Name 2:
+    1. Summary point for this theme.
+    2. Another insight.
+
+  - Do not include any introductory or closing text.
+
+summarizing_prompt_theme_cross_firm_l1_level:
+  Inputs: | 
+    Theme:- {theme_name}
+    Commentaries:- {extracted_commentary}
+
+  User Prompt: |
+    Task:-
+    Summarize the commentary into one concise, factual, and actionable 3-4 sentence output that captures the most important details only from the provided transcript.
+
+    Guidelines:-
+    Extract insights strictly from the transcript (do not add outside information).
+    Highlight clear, quantitative, and qualitative details such as revenue, growth %, margins, segments, geographies, or guidance.
+    Ensure the summary has broad coverage of the commentary, not just a single detail.
+    Write in a coherent narrative style that flows logically.
+    Use passive voice consistently.
+    Do not mention the theme name, headings, or labels in the output.
+    Do not use bullet points, lists, or extra formatting.
+
+    Structure:-
+    Begin with the main action, announcement, or result.
+    Follow with specific figures, metrics, or qualitative drivers.
+    End with implications, partnerships, or strategic focus if mentioned.
+
+    Refer to the following examples for the type of summaries and structure required:
+
+    1. Summary:- Announced the merger with Flagstar bank. The company will have $87B in assets and nearly 400 branches in nine states and 87 loan production offices across a 28 state footprint. Flagstar will still be the brand in the regions they had presence in
+
+    2. Summary:- The banks will work together to build a new independent data and execution platform for fixed income markets. The venture plans to develop a trading, data and analytics platform for structured credit and underlying collateral markets
+
+    3. Summary:- Bank will exit consumer banking in 13 markets across Asia and eastern Europe. Group will focus on wealth management in those regions through four hubs: Singapore, Hong Kong, the United Arab Emirates and London
+
+    4. Summary:- Announced a 10 year plan to finance and facilitate more than $2.5T to advance long-term solutions that address climate change and contribute to sustainable development. The firm will bring together its capital and expertise to help clients
+
+  Output: |
+    Return only the summary as a single plain-text paragraph.
+
+
+summarizing_prompt_theme_only: |
+
+  Summarize the given set of commentaries while maintaining factual accuracy. Do not mention or reference any firm names; keep the summary theme-focused only.
+
+  Return only a valid Python dictionary (no prefixes/suffixes/explanations). Do not use any prefixes like json, python. Use double quotes for all keys/values. Represent line breaks with \\n inside strings. Do not include backslashes except for valid JSON escapes. No trailing commas.
+
+  Each of the following keys must be a single string written as numbered points (1, 2, 3, …). Do not restrict the number of points — continue numbering until the total content for each section is between 200 and 250 words:
+  - "Impact"
+  - "Threats"
+  - "Challenges"
+
+  Add an additional key "Overall Summary" as a single paragraph (no numbering), 300 to 350 words, synthesizing the theme-only insights and connecting impacts, threats, and challenges into a cohesive, slightly more descriptive narrative.
+
+  {
+    "Impact": "1. Theme-focused summary of positive or negative consequences, outcomes, or influence.\\n2. Additional point.\\n3. Continue numbering until the total word count for this section is 200–250 words.",
+    "Threats": "1. Theme-focused summary of risks, vulnerabilities, or external factors that may pose a danger.\\n2. Additional point.\\n3. Continue numbering until the total word count for this section is 200–250 words.",
+    "Challenges": "1. Theme-focused summary of key difficulties, obstacles, or internal barriers faced.\\n2. Additional point.\\n3. Continue numbering until the total word count for this section is 200–250 words.",
+    "Overall Summary": "Provide a cohesive, moderately detailed synthesis (300 to 350 words) that integrates the theme’s impacts, threats, and challenges, highlights causal links, emerging patterns, and confidence qualifiers, and points to implications and decision focus—strictly without naming firms."
+  }
+
+group_similar_l2_themes_prompts: |
+  You are given a list of raw L2 themes.
+
+  raw_l2_themes: {raw_l2_themes}
+
+  Your task is to return a final, cleaned, and semantically grouped list of themes in the form of a Python dictionary.
+
+  Instructions:
+  - Your goal is to reduce redundancy by grouping semantically similar raw themes under one representative `new_l2_theme`.
+  - Each `new_l2_theme` must be specific, distinct in meaning, and not overly generic.
+  - Do not preserve superficial differences. Raw themes that differ only in casing, punctuation, tense, or minor wording must be grouped together.
+  - You must not add, remove, reword, or infer any raw themes — only use the raw L2 themes exactly as they appear in the input.
+  - Every input raw L2 theme must appear in exactly one value list in the output dictionary. No theme should be omitted or duplicated across multiple groups.
+  - The total number of raw L2 themes in the combined value lists of the dictionary must exactly equal the number of raw themes provided in the input.
+  - The dictionary must contain no explanations, formatting, code snippets, or extraneous characters — only the raw Python dictionary structure.
+
+  Output only the final dictionary object. 
+  Do not use any markdown formatting, triple backticks, or language tags (like ```python). 
+  Do not include any text before or after the dictionary. The output should be exactly like a valid Python dictionary.
+
+
+  {{
+  "new_l2_theme": "[list of all raw L2 themes that were merged into it]"
+  }}
+
+
+naming_grouped_l2_themes_prompt: |
+
+  You are given a list of raw L2 themes:
+  {raw_l2_themes}
+
+
+  Additionally, you are given a list of L2 theme names that have already been defined:
+  {already_defined_l2_list}
+
+  This list may be empty in the beginning, but it will grow over time.
+  So while naming a new theme, do not repeat the name as in already_defined_l2_list, give a very unique name that is different from that in the list
+
+  Task:
+  Based on the raw L2 themes and the provided definition, return only one final new_common_name that represents all the raw L2 themes collectively.
+
+  Instructions:
+
+  - Identify the **core topic** discussed across the L2 themes.
+  - Do not use "and" word while naming. Use the topic that is more dominant
+  - Focus on the **semantic meaning**, not just frequently used words. Consider the shared subject, intent, and context behind the themes.
+  - Avoid vague terms or overly broad labels. Be specific and relevant to the content.
+  - Do **not** reuse or closely replicate any names already present in the `{already_defined_l2_list}` — the new name must be distinct and non-overlapping.
+  - Avoid using compound connectors like "earnings and business" or " finances and strategic". 
+  - See how many dominant similar themes are there and then give a name
+  - Do not include explanations, formatting, or extra text.
+
+  Output:
+  A single string containing the new_common_name.
+
+
+
+
+
+classify_l2_from_l1_pre_defined: |
+  You are an expert content classifier responsible for mapping company commentary to a relevant L2 business theme.
+
+  ## Task:
+  Given a short piece of commentary and a list of L2 Themes, identify the **single most relevant** theme.
+
+  ## Instructions:
+  1. Read the **Commentary** carefully and understand the key message or subject.
+  2. Review all available **L2 Themes** and determine which one best matches the commentary.
+    - Match based on **conceptual relevance**, not just keywords.
+    - Choose the **best fit**, even if the match is partial.
+  3. If **none** of the L2 Themes are applicable or even loosely related, return `others`.
+
+  ## Output Format:
+  - Return **only one** L2 Theme (from the list), or `others` if no match exists.
+  - Do **not** include any explanation, punctuation, or extra text.
+
+  ---
+
+  **Input**  
+  Commentary: {extracted_commentary}  
+  L1 Theme: {l2_theme}  
+  L2 Themes: {l3_themes}  
+
+  **Output**  
+  (single L2 Theme from the list, or `others`)
+
+invent_l2_from_l1:
+  description: Classify a commentary into a suitable L2 theme using a broader L1 theme and its definition.
+  inputs:
+    - l1_theme
+    - l1_definition
+    - commentary
+  prompt: |
+    You are a highly intelligent and detail-oriented analyst classifying financial commentary.
+
+    Your task is to help derive a suitable L2 theme for a given commentary, based on the provided L1 theme and its definition.
+
+    You will be given:
+    1. A broader L1 theme
+    2. A definition of that L1 theme
+    3. A single piece of commentary (verbatim from an earnings call)
+
+    Your objective:
+    - Identify a concise and generic L2 theme.
+    - The L2 theme must clearly and logically fall under the broader L1 theme.
+    - The wording of the L2 theme must naturally align with or come from the L1 theme and its definition.
+    - The L2 theme should be reusable across contexts and companies.
+    - Provide a clear rationale explaining how the commentary maps to the L2 theme based on the L1 definition.
+ 
+ 
+
+    ---
+
+    L1 Theme: {l1_theme}  
+    Definition: {l1_definition}  
+    Commentary: "{commentary}"
+
+    ---
+
+    Output format:
+
+    Return answer in the form of a dictionary with key value pairs as follows(no json or python quotes):
+    
+    L2 Theme: <Short and generic L2 theme name, put an underscore between the words, e.g. cost_management_and_efficiency>
+    Reason: <Why this L2 theme was chosen for the commentary, using the L1 definition as context>
+
+
+    

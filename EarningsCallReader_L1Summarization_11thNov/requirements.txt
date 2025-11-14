@@ -1,0 +1,16 @@
+mistralai
+openai
+streamlit
+streamlit-pdf-viewer
+pyyaml
+pandas
+langchain
+langchain_text_splitters
+langchain_experimental
+langchain_openai
+langchain_core
+langchain_community
+auth 
+openpyxl
+xlsxwriter
+nest_asyncio
