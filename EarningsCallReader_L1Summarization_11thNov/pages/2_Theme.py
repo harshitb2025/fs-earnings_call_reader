@@ -29,7 +29,7 @@ MARKDOWN_DIR = Path(os.getcwd()) / "markdown"
 EXCEL_DIR = Path(os.getcwd()) / "excel_sheets"
 MARKDOWN_DIR.mkdir(exist_ok=True)
 
-default_excel = "fs-earnings_call_reader/EarningsCallReader_L1Summarization_11thNov/default_themes_def.xlsx"
+default_excel = "EarningsCallReader_L1Summarization_11thNov/default_themes_def.xlsx"
 initial_df = pd.read_excel(default_excel)
 
 # ==============================
